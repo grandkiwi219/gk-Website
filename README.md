@@ -2,7 +2,7 @@
 
 - - -
 
-> This js my second website:
+> This is my second website:
 
     https://gk219.kro.kr
 
