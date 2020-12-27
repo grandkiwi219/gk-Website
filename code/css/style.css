@@ -32,6 +32,8 @@ Id
     box-shadow:0 5px 5px -5px #787878;
     overflow:auto;
     white-space:nowrap;
+    padding-right:15px;
+    padding-left:15px;
 }
 
 #menu a {
