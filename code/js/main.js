@@ -20,17 +20,16 @@ const title = document.title.replace('grand kiwi | ', '');
 
 var menu_description = '';
 
-const menu_type 
-=
-[
-'<a href="/">Home</a>',
-'<a href="/information">Information</a>',
-'<a href="/community">Community</a>',
-'<a href="/project">Project</a>',
-'<a href="/status">Status</a>'
-];
+var menu_request = new XMLHttpRequest();
+menu_request.open('GET', 'https://gk219.kro.kr/code/json/menu.json', true);
+menu_request.onload = function () {
+    var data = JSON.parse(this.response);
+    data.forEach((menu_type) => {
+        menu_description += menu_type;
+    })
+}
+menu_request.send();
 
-menu_type.forEach(desc => menu_description += desc);
 
 if (title == 'Home') {
     document.getElementById('menu').innerHTML = menu_description.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
