@@ -11,7 +11,7 @@ $( document ).ready( function() {
   } );
 } );
 
-const title = document.title.replace('grand kiwi | ', '').replace('grand kiwi test | ', '');
+const title = document.title.replace('grand kiwi | ', '');
 
 var menu_description = '';
 
