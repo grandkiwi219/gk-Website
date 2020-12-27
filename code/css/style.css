@@ -52,6 +52,16 @@ Id
     border-color:silver;
 }
 
+#menu a.here {
+    color:white;
+    border-color:#8affa9;
+}
+
+#menu a.here:hover {
+    color:white;
+    border-color:8affa9;
+}
+
 
 /*
 Class
@@ -59,14 +69,4 @@ Class
 
 .fixed {
     position:fixed;
-}
-
-.here {
-    color:white;
-    border-color:#8affa9;
-}
-
-.here:hover {
-    color:white;
-    border-color:#8affa9;
 }
