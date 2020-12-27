@@ -60,10 +60,10 @@ Class
     position:fixed;
 }
 
-a.here {
+.here {
     border-color:#8affa9;
 }
 
-a.here:hover {
+.here:hover {
     border-color:#8affa9;
 }
