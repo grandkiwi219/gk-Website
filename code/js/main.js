@@ -37,8 +37,8 @@ var menu_request = new XMLHttpRequest();
 menu_request.open('GET', 'https://gk219.kro.kr/code/json/menu.json', true);
 menu_request.onload = function () {
     var data = JSON.parse(this.response);
-    data.forEach((menu_type) => {
-        menu_description += menu_type;
+    data.forEach((type) => {
+        menu_description += type;
     })
 }
 menu_request.send();
