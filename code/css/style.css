@@ -47,6 +47,10 @@ Id
     border-color:8affa9;
 }
 
+#menu a.last {
+    margin:15ox;
+}
+
 #menu a {
     display:inline-block;
     color:silver;
