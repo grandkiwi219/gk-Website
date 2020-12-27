@@ -33,8 +33,6 @@ Id
     box-shadow:0 5px 5px -5px #787878;
     overflow-x:auto;
     white-space:nowrap;
-    padding-right:15px;
-    padding-left:15px;
 }
 
 #menu a.here {
@@ -45,10 +43,6 @@ Id
 #menu a.here:hover {
     color:white;
     border-color:8affa9;
-}
-
-#menu a.last {
-    margin-right:15ox;
 }
 
 #menu a {
