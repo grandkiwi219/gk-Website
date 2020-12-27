@@ -39,7 +39,7 @@ Id
 
 #menu a {
     display:inline-block;
-    color:white;
+    color:silver;
     text-align:center;
     padding:15px;
     padding-bottom:12px;
@@ -48,6 +48,7 @@ Id
 }
 
 #menu a:hover {
+    color:white;
     border-color:silver;
 }
 
@@ -61,9 +62,11 @@ Class
 }
 
 .here {
+    color:white;
     border-color:#8affa9;
 }
 
 .here:hover {
+    color:white;
     border-color:#8affa9;
 }
