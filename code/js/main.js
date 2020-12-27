@@ -4,8 +4,8 @@ var desc = new XMLHttpRequest();
 desc.open('GET', 'https://gk219.kro.kr/code/json/notice.json', true);
 desc.onload = function () {
     var data = JSON.parse(this.response);
-    data.forEach((type) => {
-        document.getElementById('notice').innerHTML += type.replace('/n/', '<br/>');
+    data.forEach((noticeType) => {
+        document.getElementById('notice').innerHTML += noticeType.replace('/n/', '<br/>');
     })
 }
 desc.send();
@@ -37,8 +37,8 @@ var menu_request = new XMLHttpRequest();
 menu_request.open('GET', 'https://gk219.kro.kr/code/json/menu.json', true);
 menu_request.onload = function () {
     var data = JSON.parse(this.response);
-    data.forEach((type) => {
-        menu_description += type;
+    data.forEach((menuType) => {
+        menu_description += menuType;
     })
 }
 menu_request.send();
