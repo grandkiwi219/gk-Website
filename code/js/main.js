@@ -4,6 +4,7 @@ var desc = new XMLHttpRequest();
 desc.open('GET', 'https://gk219.kro.kr/code/json/notice.json', true);
 desc.onload = function () {
     var data = JSON.parse(this.response);
+    if (data[0] == '') $('#notice').remove('#notice')
     data.forEach((noticeType) => {
         document.getElementById('notice').innerHTML += noticeType.replace('/n/', '<br/>');
     })
