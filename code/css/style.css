@@ -51,14 +51,6 @@ Id
     border-color:silver;
 }
 
-#here {
-    border-color:#8affa9;
-}
-
-#here:hover {
-    border-color:#8affa9;
-}
-
 
 /*
 Class
@@ -66,4 +58,12 @@ Class
 
 .fixed {
     position:fixed;
+}
+
+.here {
+    border-color:#8affa9;
+}
+
+.here:hover {
+    border-color:#8affa9;
 }
