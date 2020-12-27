@@ -45,7 +45,8 @@ Id
 }
 
 #menu a:hover {
-
+    background-color:silver;
+    border-color:#8affa9;
 }
 
 
