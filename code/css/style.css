@@ -37,6 +37,16 @@ Id
     padding-left:15px;
 }
 
+#menu a.here {
+    color:white;
+    border-color:#8affa9;
+}
+
+#menu a.here:hover {
+    color:white;
+    border-color:8affa9;
+}
+
 #menu a {
     display:inline-block;
     color:silver;
@@ -50,16 +60,6 @@ Id
 #menu a:hover {
     color:white;
     border-color:silver;
-}
-
-#menu a.here {
-    color:white;
-    border-color:#8affa9;
-}
-
-#menu a.here:hover {
-    color:white;
-    border-color:8affa9;
 }
 
 
