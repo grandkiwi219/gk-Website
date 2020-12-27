@@ -30,7 +30,7 @@ $( document ).ready( function() {
   } );
 } );
 
-const title = document.title.replace('grand kiwi | ', '');
+var title = document.title.replace('grand kiwi | ', '');
 
 var menuDescription = '';
 
