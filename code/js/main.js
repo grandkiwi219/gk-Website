@@ -11,8 +11,24 @@ $( document ).ready( function() {
   } );
 } );
 
-var title = document.title.replace('grand kiwi | ', '')
+const title = document.title.replace('grand kiwi | ', '');
+
+var menu_description = '';
+
+const menu_type 
+=
+[
+'<a href="/">Home</a>',
+'<a href="/information">Information</a>',
+'<a href="/community">Community</a>',
+'<a href="/project">Project</a>',
+'<a href="/status">Status</a>'
+];
+
+menu_type.forEach(desc => menu_description += desc);
 
 if (title == 'Home') {
-    document.getElementById('menu').innerHTML = '<a class="here" href="/"><b>Home</b></a><a href="/information">Information</a><a href="/community">Community</a><a href="/project">Project</a><a href="/status">Status</a>'
+    document.getElementById('menu').innerHTML = menu_description.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
+} else {
+    document.getElementById('menu').innerHTML = menu_description;
 }
