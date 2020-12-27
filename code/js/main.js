@@ -1,3 +1,8 @@
+//title
+
+document.getElementById('title').innerHTML = '<b>grand kiwi</b>';
+
+
 //menu
 
 $( document ).ready( function() {
