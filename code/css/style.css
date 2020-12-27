@@ -26,16 +26,7 @@ Id
     background-color:#3d3d3d;
 }
 
-
-/*
-Class
-*/
-
-.fixed {
-    position:fixed;
-}
-
-.menu {
+#menu {
     width:100%;
     color:white;
     background-color:#3d3d3d;
@@ -44,17 +35,17 @@ Class
     white-space:nowrap;
 }
 
-.menu a.here {
+#menu a.here {
     color:white;
     border-color:#8affa9;
 }
 
-.menu a.here:hover {
+#menu a.here:hover {
     color:white;
     border-color:#8affa9;
 }
 
-.menu a {
+#menu a {
     display:inline-block;
     color:silver;
     text-align:center;
@@ -64,7 +55,16 @@ Class
     border-bottom:3px solid #3d3d3d;
 }
 
-.menu a:hover {
+#menu a:hover {
     color:white;
     border-color:silver;
+}
+
+
+/*
+Class
+*/
+
+.fixed {
+    position:fixed;
 }
