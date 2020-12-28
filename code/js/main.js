@@ -41,7 +41,7 @@ menuRequest.onload = function () {
         document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/project">Project</a>', '<a class="here" href="/project"><b>Project</b></a>');
     } else if (title == 'Status') {
         document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/status">Status</a>', '<a class="here" href="/status"><b>Status</b></a>');
-    } else {
+    } else if (title != 'Home' && title != 'Information' && title != 'Community' && title != 'Project' && title != 'Status') {
         document.getElementById('menu').innerHTML = menuDescription;
     }
 }
