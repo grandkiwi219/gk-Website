@@ -27,7 +27,6 @@ menuRequest.onload = function () {
     var data = JSON.parse(this.response);
     data.forEach((menuType) => {
         menuDescription += menuType;
-        console.log(menuDescription);
     })
 }
 menuRequest.send();
