@@ -2,7 +2,7 @@
 
 var notice = '';
 
-    if (notice = '') {
+    if (notice == '') {
         console.log('공지 없음')
         $('#notice').remove('#notice')
     } else {
@@ -19,7 +19,7 @@ document.getElementById('title').innerHTML = '<b>grand kiwi</b>';
 
 var title = document.title.replace('grand kiwi | ', '');
 
-var menuDescription = '';
+menuDescription = '';
 
 var menuRequest = new XMLHttpRequest();
 menuRequest.open('GET', 'https://gk219.kro.kr/code/json/menu.json', true);
