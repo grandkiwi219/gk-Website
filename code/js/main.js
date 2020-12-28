@@ -31,9 +31,6 @@ menuRequest.onload = function () {
     data.forEach((menuType) => {
         menuDescription += menuType;
     })
-}
-menuRequest.send();
-
 if (title == 'Home') {
     document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
 } else if (title == 'Information') {
@@ -59,4 +56,8 @@ $( document ).ready( function() {
     }
   } );
 } );
+
+}
+menuRequest.send();
+
 
