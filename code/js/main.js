@@ -31,20 +31,21 @@ menuRequest.onload = function () {
     data.forEach((menuType) => {
         menuDescription += menuType;
     })
-if (title == 'Home') {
-    document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
-} else if (title == 'Information') {
-    document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/information">Information</a>', '<a class="here" href="/information"><b>Information</b></a>');
-} else if (title == 'Community') {
-    document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/community">Community</a>', '<a class="here" href="/community"><b>Community</b></a>');
-} else if (title == 'Project') {
-    document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/project">Project</a>', '<a class="here" href="/project"><b>Project</b></a>');
-} else if (title == 'Status') {
-    document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/status">Status</a>', '<a class="here" href="/status"><b>Status</b></a>');
-} else {
-    document.getElementById('menu').innerHTML = menuDescription;
+    if (title == 'Home') {
+        document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
+    } else if (title == 'Information') {
+        document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/information">Information</a>', '<a class="here" href="/information"><b>Information</b></a>');
+    } else if (title == 'Community') {
+        document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/community">Community</a>', '<a class="here" href="/community"><b>Community</b></a>');
+    } else if (title == 'Project') {
+        document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/project">Project</a>', '<a class="here" href="/project"><b>Project</b></a>');
+    } else if (title == 'Status') {
+        document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/status">Status</a>', '<a class="here" href="/status"><b>Status</b></a>');
+    } else {
+        document.getElementById('menu').innerHTML = menuDescription;
+    }
 }
-
+menuRequest.send();
 
 $( document ).ready( function() {
   var menu = $( '#menu' ).offset();
@@ -56,8 +57,3 @@ $( document ).ready( function() {
     }
   } );
 } );
-
-}
-menuRequest.send();
-
-
