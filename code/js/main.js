@@ -35,7 +35,6 @@ menuRequest.onload = function () {
 }
 menuRequest.send();
 
-
 if (title == 'Home') {
     document.getElementById('menu').innerHTML = menuDescription.replace('<a href="/">Home</a>', '<a class="here" href="/"><b>Home</b></a>');
 } else if (title == 'Information') {
